@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 8000,
+    host: "0.0.0.0", // Specify the host to bind to
     proxy: {
       "/api": {
         target: "https://jobs-backend-api-mern-1.onrender.com/api/v1",
